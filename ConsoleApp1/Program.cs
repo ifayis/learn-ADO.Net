@@ -9,24 +9,24 @@ namespace ConsoleApp1
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            string connstr = @"Server=localhost\SQLEXPRESS;Database=StudentsDB;Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connstr))
-            {
-                con.Open();
+        //static void Main(string[] args)
+        //{
+        //    string connstr = @"Server=localhost\SQLEXPRESS;Database=StudentsDB;Trusted_Connection=True;";
+        //    using (SqlConnection con = new SqlConnection(connstr))
+        //    {
+        //        con.Open();
 
-                string query = "select id,name,detailsid from Students";
-                SqlCommand cmd = new SqlCommand(query, con);
+        //        string query = "select id,name,detailsid from Students";
+        //        SqlCommand cmd = new SqlCommand(query, con);
 
-                SqlDataReader dr = cmd.ExecuteReader();
+        //        SqlDataReader dr = cmd.ExecuteReader();
 
-                while (dr.Read())
-                {
-                    Console.WriteLine($"{dr["id"]} - {dr["name"]} - {dr["detailsid"]}");
-                }
-                dr.Close();
-            }
-        }
+        //        while (dr.Read())
+        //        {
+        //            Console.WriteLine($"{dr["id"]} - {dr["name"]} - {dr["detailsid"]}");
+        //        }
+        //        dr.Close();
+        //    }
+        //}
     }
 }
