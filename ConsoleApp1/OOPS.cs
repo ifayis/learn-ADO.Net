@@ -27,13 +27,39 @@ namespace ConsoleApp1
             }
         }
 
+        // POLYMORPHISM
+        public class Person
+        {
+            public virtual void Hello()
+            {
+                Console.WriteLine("Hello bro, How Are You ?");
+            }
+        }
+
+        public class Friends : Person
+        {
+            public override void Hello()
+            {
+                Console.WriteLine("Hi Machuu, Sugalle ?");
+            }
+        }
+
+
         static void Main()
         {
-            Dog A = new Dog();
-            A.Name = "Bruno";
+        // inheritance
 
-            A.Bark();
-            A.Jumb();
+            //Dog A = new Dog();
+            //A.Name = "Bruno";
+
+            //A.Bark();
+            //A.Jumb();
+
+
+        // polymorphism
+
+            Friends B = new Friends();
+            B.Hello();
         }
     }
 }
