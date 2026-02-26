@@ -30,6 +30,9 @@ namespace ConsoleApp1
             //{
             //    Console.WriteLine($"{stu.Name} - {stu.Age} - {stu.Department}");
             //}
+
+            int result = students.Max(s => s.Age);
+            Console.WriteLine(result);
         }
     }
 }
