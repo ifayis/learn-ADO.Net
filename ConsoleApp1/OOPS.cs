@@ -11,9 +11,11 @@ namespace ConsoleApp1
         // INHERITANCE
         public class Animal
         {
+            public string Name { get; set; }
+
             public void Jumb()
             {
-                Console.WriteLine("The Animal Jumbed");
+                Console.WriteLine($"The {Name} Jumbed.");
             }
         }
 
@@ -21,13 +23,15 @@ namespace ConsoleApp1
         {
             public void Bark()
             {
-                Console.WriteLine("Its Barking Very Well");
+                Console.WriteLine($"{Name} Barking Very Well.");
             }
         }
 
         static void Main()
         {
             Dog A = new Dog();
+            A.Name = "Bruno";
+
             A.Bark();
             A.Jumb();
         }
