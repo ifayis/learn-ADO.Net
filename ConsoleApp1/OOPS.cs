@@ -27,6 +27,7 @@ namespace ConsoleApp1
             }
         }
 
+
         // POLYMORPHISM
         public class Person
         {
@@ -45,6 +46,29 @@ namespace ConsoleApp1
         }
 
 
+        // ABSTRACTION
+        // Abstract class
+        abstract class Animals
+        {
+            public abstract void Sound();
+            public void Sleep()
+            {
+                Console.WriteLine("Animal is sleeping.");
+            }
+        }
+
+         class Cat : Animals
+        {
+            public override void Sound()
+            {
+                Console.WriteLine("The Sound is meow.");
+            }
+        }
+
+
+
+
+
         static void Main()
         {
         // inheritance
@@ -58,8 +82,16 @@ namespace ConsoleApp1
 
         // polymorphism
 
-            Friends B = new Friends();
-            B.Hello();
+            //Friends B = new Friends();
+            //B.Hello();
+
+
+        // Abstraction
+
+            // abtract class
+            //Animals A = new Cat();
+            //A.Sound();
+            //A.Sleep();
         }
     }
 }
