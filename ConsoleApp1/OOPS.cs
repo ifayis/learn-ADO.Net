@@ -109,8 +109,8 @@ namespace ConsoleApp1
 
             // interface class
 
-            IAnimals a = new Fish();
-            a.Sound();
+            //IAnimals a = new Fish();
+            //a.Sound();
 
         }
     }
