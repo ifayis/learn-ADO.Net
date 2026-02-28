@@ -65,13 +65,26 @@ namespace ConsoleApp1
             }
         }
 
+        // Interface class
+        interface IAnimals
+        {
+            void Sound();
+        }
+
+        class Fish : IAnimals
+        {
+            public void Sound()
+            {
+                Console.WriteLine("The fish jumbed.");
+            } 
+        }
 
 
 
 
         static void Main()
         {
-        // inheritance
+            // inheritance
 
             //Dog A = new Dog();
             //A.Name = "Bruno";
@@ -80,18 +93,25 @@ namespace ConsoleApp1
             //A.Jumb();
 
 
-        // polymorphism
+            // polymorphism
 
             //Friends B = new Friends();
             //B.Hello();
 
 
-        // Abstraction
+            // abstraction
 
             // abtract class
             //Animals A = new Cat();
             //A.Sound();
             //A.Sleep();
+
+
+            // interface class
+
+            IAnimals a = new Fish();
+            a.Sound();
+
         }
     }
 }
