@@ -80,6 +80,28 @@ namespace ConsoleApp1
         }
 
 
+        // ENCAPSULATION
+        class Persons
+        {
+            private int Age;
+
+            public int age
+            {
+                get
+                {
+                    return Age;
+                }
+                set
+                {
+                    if (value > 0)
+                        Age = value;
+                    else
+                        Console.WriteLine("Age cant be less than zero");
+                }
+            }
+        }
+
+
 
 
         static void Main()
@@ -112,6 +134,11 @@ namespace ConsoleApp1
             //IAnimals a = new Fish();
             //a.Sound();
 
+
+            // encapsulation
+            //Persons P = new Persons();
+            //P.age = 15;
+            //Console.WriteLine(P.age);
         }
     }
 }
