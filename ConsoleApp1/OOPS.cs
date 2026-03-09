@@ -104,8 +104,8 @@ namespace ConsoleApp1
 
 
 
-        static void Main()
-        {
+        //static void Main()
+        //{
             // inheritance
 
             //Dog A = new Dog();
@@ -139,6 +139,6 @@ namespace ConsoleApp1
             //Persons P = new Persons();
             //P.age = 15;
             //Console.WriteLine(P.age);
-        }
+        //}
     }
 }
