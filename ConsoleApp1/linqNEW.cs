@@ -26,11 +26,15 @@ namespace ConsoleApp1
             new Employee { Id = 4, Name = "David", Department = "Finance", Salary = 50000 }
             };
 
-            var result = employees.Where(e => e.Salary > 50000).ToList().ToList();
+            
+            var result = employees.OrderByDescending(e => e.Salary).Take(2);
+
             foreach (var item in result)
             {
-                Console.WriteLine($"{item.Salary}");
+                Console.WriteLine($"{item.Name} - {item.Salary} - {item.Department}");
             }
+
+            //Console.WriteLine(result);
         }
     }
 }
